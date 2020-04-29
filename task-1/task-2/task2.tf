@@ -1,10 +1,10 @@
 provider "aws" {
-    region = "us-east-2"
+    region = "us-west-2"
     version = "2.59"
 }
 
 resource "aws_instance" "web" {
-  ami           = "ami-0f7919c33c90f5b58"
+  ami           = "ami-0d6621c01e8c2de2c"
   instance_type = "t2.large"
   key_name      = "${aws_key_pair.eu-west-1-key.key_name}"
   security_groups = ["${aws_security_group.allow_tls.name}"]  
