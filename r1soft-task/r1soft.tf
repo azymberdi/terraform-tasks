@@ -1,5 +1,5 @@
 provider "aws" {
-  region  = "us-west-2" #london worked but other does not 
+  region  = "us-east-1" #london worked but other does not 
   version = "2.59"
 }
 
