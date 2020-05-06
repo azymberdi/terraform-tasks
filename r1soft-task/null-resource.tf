@@ -23,7 +23,7 @@ resource "null_resource" "commands_to_run" {
       "sudo mv /tmp/r1soft.repo /etc/yum.repos.d/r1soft.repo",
       "sudo yum install serverbackup-enterprise -y",
       "sudo serverbackup-setup --user r1softteam3 --pass team3project",
-      "serverbackup-setup --http-port 26080 --https-port 26443",
+      "sudo serverbackup-setup --http-port 26080 --https-port 26443",
       "sudo /etc/init.d/cdp-server restart",
     ]
   }
